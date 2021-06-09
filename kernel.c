@@ -130,5 +130,13 @@ void kernel_main(void)
     terminal_initialize();
     terminal_writestring("Hello, kernel World!\n");
     terminal_writestring("2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n");
-    terminal_writestring("This is a very long string and i hope it is long enough to warrant a line break or i will be disappointed");
+    terminal_writestring("This is a very long string and i hope it is long enough to warrant a line break or i will be disappointed\n");
+    terminal_setcolor(VGA_COLOR_RED);
+    terminal_writestring("And ");
+    terminal_setcolor(VGA_COLOR_GREEN);
+    terminal_writestring("now ");
+    terminal_setcolor(VGA_COLOR_CYAN);
+    terminal_writestring("with ");
+    terminal_setcolor(VGA_COLOR_BLUE);
+    terminal_writestring("color!\n");
 }
