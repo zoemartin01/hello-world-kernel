@@ -14,3 +14,7 @@ remove_old_build:
 	@echo "Removing old build"
 	rm -r build
 	mkdir build
+
+run: link
+	@echo "Starting qemu"
+	qemu-system-i386 -kernel build/myos.bin
